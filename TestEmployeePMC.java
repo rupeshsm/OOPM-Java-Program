@@ -8,10 +8,10 @@ class Employee
 	
 	Employee(String name, int e_id, float salary, boolean status)
 	{
-		name="Test";
-		e_id=0;
-		salary=10000.50;
-		status=false;
+		this.name=name;
+		this.e_id=e_id;
+		this.salary=salary;
+		this.status=status;
 		
 	}
 	void getData()
@@ -37,7 +37,7 @@ class TestEmployeeScan
 		System.out.println("Enter Working Satus (Boolean) of Employee: " );
 		boolean status=sc.nextBoolean());
 
-		Employee e = new Employee(name,e_id,salary,status);
+		Employee e = new Employee(name,e_id,salary,status); //Call to parameterised constructor
 		
 		e.getData();
 	} 
