@@ -30,6 +30,6 @@ class TestEmployeeScan
 		
 		Employee e = new Employee();	//Constructor Call
 		
-		e.getData();
+		e.getData();		// To display default vaue assigned by the constructor to the varable of object e
 	} 
 }
