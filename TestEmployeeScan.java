@@ -1,16 +1,16 @@
-import java.util.Scanner;
+import java.util.Scanner;		//importing Scanner class from util package
 class Employee
 {
 	String name;
 	int e_id;
 	float salary;
 	boolean status;
-	Scanner sc = new Scanner(System.in);
-	void setData(String a[])
+	Scanner sc = new Scanner(System.in);	//Creating Object for the call Scanner
+	void setData()
 	{
 		
 		System.out.println("Enter Name (String) of Employee: " );
-		name=sc.nextLine();
+		name=sc.nextLine();				// Methood to accept String from user
 		System.out.println("Enter Employee ID (Integer) of Employee: " );
 		e_id=sc.nextInt();
 		System.out.println("Enter Salary (Float) of Employee: " );
@@ -33,7 +33,7 @@ class TestEmployeeScan
 	{
 		
 		Employee e = new Employee();
-		e.setData(args);
+		e.setData();
 		e.getData();
 	} 
 }
