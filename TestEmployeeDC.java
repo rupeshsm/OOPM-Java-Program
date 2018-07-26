@@ -29,7 +29,7 @@ class TestEmployeeScan
 		
 		
 		Employee e = new Employee();	//Constructor Call
-		
+		System.out.println("\n\nDetails of Mr. "+e.name );
 		e.getData();		// To display default vaue assigned by the constructor to the varable of object e
 	} 
 }
