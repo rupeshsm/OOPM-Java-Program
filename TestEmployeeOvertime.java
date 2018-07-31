@@ -26,9 +26,9 @@ class Employee
 	{
 		System.out.println("Name:"+name+"\nEmp Id:"+e_id+"\nSalary:"+salary+"\nStatus:"+status);
 	}
-	float overtime()
+	float overtime(float time)
 	{
-		float ot = work_hrs-40;
+		float ot = work_hrs-time;
 		return ot; 
 	}
 }
@@ -43,7 +43,10 @@ class TestEmployeeOvertime
 		Employee e = new Employee();
 		e.setData();
 		e.getData();
-		float ot = e.overtime();
+		System.out.println("Enter  working hour for the Month: ");
+		Scanner sc = new Scanner(System.in);
+		float time = sc.nextFloat();
+		float ot = e.overtime(float time);
 		if(ot > 0)
 		{
 			System.out.println(e.name +" worked "+ot+" Hrs Extra");
