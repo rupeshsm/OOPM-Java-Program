@@ -2,7 +2,7 @@
 class PrintString
 {
 	
-	static void displayText()
+	static void displayText()   // Defining static method
 	{
 		System.out.println("Hello, World :) ");
 	}
@@ -15,7 +15,7 @@ class PrintStringTestStat
 	public static void main(String args[])
 	{
 		
-		PrintString.displayText();
+		PrintString.displayText(); // Calling static method from object name
 		
 	} 
 }
