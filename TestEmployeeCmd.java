@@ -27,13 +27,7 @@ class TestEmployeeCmd
 	{
 		
 		Employee e = new Employee();
-		e.setData(args);	// Passing command line input to setData method
+		e.setData(args);
 		e.getData();
 	} 
 }
-
-/* 
-to compile
-/path/of/filedirectory>javac TestEmployeeCmd.java
-/path/of/filedirectory>java TestEmployeeCmd Rupesh 56 90000.50 true
-*/

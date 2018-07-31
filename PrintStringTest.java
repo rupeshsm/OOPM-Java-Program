@@ -15,8 +15,8 @@ class PrintStringTest
 	public static void main(String args[])
 	{
 		
-		PrintString p = new PrintString(); // Creating Object of class PrintString
-		p.displayText();		 // Calling non static method displayText()
+		PrintString p = new PrintString();
+		p.displayText();
 		
 	} 
 }

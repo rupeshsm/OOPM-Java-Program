@@ -5,12 +5,12 @@ class Employee
 	int e_id;
 	float salary;
 	boolean status;
-	Scanner sc = new Scanner(System.in);	//Creating Object for the Scanner class
+	Scanner sc = new Scanner(System.in);	//Creating Object for the call Scanner
 	void setData()
 	{
 		
 		System.out.println("Enter Name (String) of Employee: " );
-		name=sc.nextLine();	 // Method to accept String from user
+		name=sc.nextLine();				// Methood to accept String from user
 		System.out.println("Enter Employee ID (Integer) of Employee: " );
 		e_id=sc.nextInt();
 		System.out.println("Enter Salary (Float) of Employee: " );
