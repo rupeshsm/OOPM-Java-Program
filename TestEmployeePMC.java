@@ -37,7 +37,7 @@ class TestEmployeeScan
 		System.out.println("Enter Working Satus (Boolean) of Employee: " );
 		boolean status=sc.nextBoolean());
 
-		Employee e = new Employee(name,e_id,salary,status); //Call to parameterised constructor
+		Employee e = new Employee(name,e_id,salary,status); //Call to  constructor
 		
 		e.getData();
 	} 
