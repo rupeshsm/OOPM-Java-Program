@@ -8,7 +8,7 @@ class Employee
 	
 	Employee()
 	{
-		name="Test";		//Default Constructure Definition
+		name="Test";	//Default Constructure Definition
 		e_id=0;
 		salary=10000.50;
 		status=false;
@@ -52,10 +52,10 @@ class TestEmployeeScan
 		System.out.println("Enter Salary (Float) of Employee: " );
 		float salary=sc.nextFloat();
 		System.out.println("Enter Working Satus (Boolean) of Employee: " );
-		boolean status=sc.nextBoolean();
+		boolean status=sc.nextBoolean());
 
 		Employee e1 = new Employee(name,e_id,salary,status);
-		Employee e1_backup = new Employee(e1);
+		Employee e1_backup = new Employee(e1); // Call to Copy Construcutor
 		
 		System.out.println("\n\n Details of Employee:"+e.name );
 		e.getData();
