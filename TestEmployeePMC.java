@@ -8,7 +8,7 @@ class Employee
 	
 	Employee(String name, int e_id, float salary, boolean status)
 	{
-		this.name=name;
+		this.name=name;		// Parameterised Constructor
 		this.e_id=e_id;
 		this.salary=salary;
 		this.status=status;
