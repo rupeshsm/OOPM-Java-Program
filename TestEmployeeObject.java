@@ -24,7 +24,7 @@ class Employee
 	{
 		System.out.println("Name:"+name+"\nEmp Id:"+e_id+"\nSalary:"+salary+"\nStatus:"+status);
 	}
-	Employee copyEmployee(Employee e)
+	Employee copyEmployee(Employee e)	//Mehod with objects
 	{
 		Employee de = e;
 		return de;
