@@ -26,11 +26,7 @@ class Employee
 	}
 	Employee copyEmployee(Employee e)
 	{
-		Employee de = new Employee();
-		de.name =e.name;
-		de.e_id = e.e_id;
-		de.salary = e.salary;
-		de.status = e.status;
+		Employee de = e;
 		return de;
 	}
 }
