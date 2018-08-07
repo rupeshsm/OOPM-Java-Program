@@ -51,7 +51,7 @@ class Employee
 
 		System.out.println("Working Status and Salary changed successfully " );
 	}
-	void modify(Employee e)
+	void modify()
 	{
 	System.out.println("\nSelect Details to Modify : ");
 		System.out.println("\n1. Name \n2.ID \n3. Salary \n4.Status and Salary");
@@ -61,20 +61,20 @@ class Employee
 		{
 			case 1:     System.out.println("Enter new Name (String) of Employee: " );
 				String name=sc.nextLine();
-				e.modifyData(name);
+				this.modifyData(name);
 				break;
 			case 2:     System.out.println("Enter new ID (Integer) of Employee: " );
 				int e_id=sc.nextInt();
-				e.modifyData(e_id);
+				this.modifyData(e_id);
 				break;
 			case 3:     System.out.println("Enter new Salary (Float) of Employee: " );
 				float salary=sc.nextFloat();
-				e.modifyData(salary);
+				this.modifyData(salary);
 				break;
 			case 4:     System.out.println("Enter new status (Boolean) and Salary (Float) of Employee: " );
 				boolean status=sc.nextBoolean();
 				salary=sc.nextFloat();
-				e.modifyData(status, salary);
+				this.modifyData(status, salary);
 				break;
 			default:     System.out.println("This feature is not yet available" );
 		}	
@@ -95,7 +95,7 @@ class TestEmployeeModify
 		e.setData();
 		System.out.println("Details of :"+e.name);
 		e.getData();
-		e.modify(e);
+		e.modify();
 		e.getData();
 			
 	} 
